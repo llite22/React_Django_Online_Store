@@ -23,4 +23,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY store/manage.py .
 COPY store/store/ ./store/
 
+RUN python manage.py collectstatic --noinput && \
+    chmod -R 755 /app/static
+
 CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]

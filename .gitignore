@@ -1,0 +1,50 @@
+### Общие исключения ###
+**/.DS_Store
+**/.idea
+**/*.suo
+**/*.ntvs*
+**/*.njsproj
+**/*.sln
+**/*.sw?
+
+# Логи
+**/logs/
+**/*.log
+
+### Django ###
+**/*.pyc
+**/__pycache__/
+**/*.sqlite3
+**/*.pyo
+**/*.pyd
+**/.Python
+**/.env
+**/.env.local
+# **/.env.development
+# **/.env.production
+**/venv/
+**/.venv/
+**/env/
+**/db.sqlite3
+**/media/
+**/staticfiles/
+
+### Фронтенд ###
+**/node_modules/
+**/dist/
+**/dist-ssr/
+**/*.local
+**/build/
+
+# npm/yarn/pnpm
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/pnpm-debug.log*
+**/lerna-debug.log*
+**/package-lock.json
+**/yarn.lock
+
+# VSCode
+**/.vscode/*
+!**/.vscode/extensions.json
